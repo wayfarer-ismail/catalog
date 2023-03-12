@@ -13,6 +13,18 @@ public class CartItem implements Serializable {
         this.price = price;
     }
 
+    public String getImgAddress() {
+        return imgAddress;
+    }
+
+    public int getPrice() {
+        return price;
+    }
+
+    public String getName() {
+        return name;
+    }
+
     @Override
     public boolean equals(Object obj) {
         if (obj instanceof CartItem c) {

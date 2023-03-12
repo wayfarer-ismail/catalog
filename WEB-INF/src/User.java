@@ -51,4 +51,11 @@ public class User implements Serializable {
     public int hashCode() {
         return email.hashCode();
     }
+
+    @Override
+    public String toString() {
+        return "Name: " + getFirstName() + " " + getLastName() +
+                "\nemail: " + getEmail() +
+                "\npassword: " + getPassword();
+    }
 }
